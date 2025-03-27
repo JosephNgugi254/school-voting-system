@@ -1,0 +1,223 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    margin: auto;
+    margin-top: 0.5rem;
+    height: 10vh;
+    background-color: #4790ad;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+#voting-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(63, 156, 193, 0.1);
+    background-color: #d8dddf; 
+    border-radius: 10px;  
+    margin: 0.5rem; 
+}
+
+#voting-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+#voting-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    color: #333;
+    align-items: left;
+}
+
+#voting-form input[type="text"] {
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#paragraph {
+    font-size: 1.2rem;
+    color: #4790ad;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#candidates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    gap: 3rem;
+}
+
+#candidates img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-right: 0.2rem;
+    object-fit: cover;
+}
+
+.candidate-box {
+    display: flex;
+    flex-direction: row;     
+    width: 100%;
+    justify-content: space-between;
+}
+
+.positions h3 {
+    margin-top: 0;
+    color: #4790ad;
+}
+
+.positions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+#voting-form button {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    background-color: #4790ad;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#voting-form button:hover {
+    background-color: #367a91;
+}
+
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 4px 6px rgba(63, 156, 193, 0.1);
+    background-color: #d8dddf; 
+    border-radius: 10px; 
+    margin: 0.5rem;
+}
+
+#chart-chairperson {
+    width: 50%;
+    float: left;
+}
+
+#chart-dhCaptain {
+    width: 50%;
+    float: right;
+}
+
+#chart-chairperson h3,
+#chart-dhCaptain h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        height: fit-content;
+    }
+
+    #header {
+        margin-top: 0.2rem;
+        border-radius: 10px;
+    }
+
+    #voting-form {
+        width: 92%;
+        padding: 0.2rem;
+    }
+
+    #candidates{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        gap: 0;
+    }
+
+    .candidate-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        max-width: 80%;
+        padding: 0 0.5rem;
+    }
+
+    .positions {
+        width: 90%;
+    }
+
+    #results {
+        flex-direction: column;
+    }
+
+    #chart-chairperson,
+    #chart-dhCaptain {
+    width: 96%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    body {
+        height: fit-content;
+    }
+    #voting-form {
+        width: 92%;
+    }
+    #candidates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 3rem;
+    }
+    
+}

@@ -1,0 +1,163 @@
+{
+  "voters": [
+    {
+      "id": "672a",
+      "name": "Joseph Ngugi",
+      "admissionNumber": "11063"
+    },
+    {
+      "id": "012a",
+      "name": "Joseph Ngugi",
+      "admissionNumber": "11064"
+    },
+    {
+      "id": "865e",
+      "name": "Ann Wanjiru",
+      "admissionNumber": "11027"
+    },
+    {
+      "id": "024e",
+      "name": "Bob Mwiti",
+      "admissionNumber": "0001"
+    },
+    {
+      "id": "f351",
+      "name": "vyvyi",
+      "admissionNumber": "hbh"
+    },
+    {
+      "id": "3f64",
+      "name": "Esther Ngugi",
+      "admissionNumber": "2759"
+    },
+    {
+      "id": "1789",
+      "name": "bob brown",
+      "admissionNumber": "0003"
+    },
+    {
+      "id": "970a",
+      "name": "Michael mbugua",
+      "admissionNumber": "1200"
+    },
+    {
+      "id": "b7e9",
+      "name": "Andrew Kahiga",
+      "admissionNumber": "1212"
+    },
+    {
+      "id": "cc31",
+      "name": "Joy Kintei",
+      "admissionNumber": "1010"
+    },
+    {
+      "id": "06d4",
+      "name": "Joel Leshan",
+      "admissionNumber": "1400"
+    }
+  ],
+  "chairpersons": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "image": "https://via.placeholder.com/150",
+      "votes": 4
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "image": "https://via.placeholder.com/150",
+      "votes": 3
+    },
+    {
+      "id": "3",
+      "name": "Michael Green",
+      "image": "https://via.placeholder.com/150",
+      "votes": 3
+    },
+    {
+      "id": "4",
+      "name": "Emily White",
+      "image": "https://via.placeholder.com/150",
+      "votes": 1
+    }
+  ],
+  "dhCaptains": [
+    {
+      "id": "5",
+      "name": "Alice Johnson",
+      "image": "https://via.placeholder.com/150",
+      "votes": 2
+    },
+    {
+      "id": "6",
+      "name": "Bob Brown",
+      "image": "https://via.placeholder.com/150",
+      "votes": 3
+    },
+    {
+      "id": "7",
+      "name": "Chris Black",
+      "image": "https://via.placeholder.com/150",
+      "votes": 2
+    },
+    {
+      "id": "8",
+      "name": "Sophia Gray",
+      "image": "https://via.placeholder.com/150",
+      "votes": 4
+    }
+  ],
+  "entertainmentCaptains": [
+    {
+      "id": "9",
+      "name": "Charlie Davis",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "10",
+      "name": "Diana Evans",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "11",
+      "name": "Ethan Harris",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "12",
+      "name": "Grace Lee",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    }
+  ],
+  "gamesCaptains": [
+    {
+      "id": "13",
+      "name": "Henry Adams",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "14",
+      "name": "Ivy Carter",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "15",
+      "name": "Jack Wilson",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    },
+    {
+      "id": "16",
+      "name": "Lily Brown",
+      "image": "https://via.placeholder.com/150",
+      "votes": 0
+    }
+  ]
+}
