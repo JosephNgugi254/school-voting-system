@@ -1,13 +1,17 @@
 {
   "voters": [
-    
+    {
+      "id": "022c",
+      "name": "Joseph Ngugi",
+      "admissionNumber": "0001"
+    }
   ],
   "chairpersons": [
     {
       "id": "1",
       "name": "John Doe",
       "image": "https://via.placeholder.com/150",
-      "votes": 0
+      "votes": 1
     },
     {
       "id": "2",
@@ -33,7 +37,7 @@
       "id": "5",
       "name": "Alice Johnson",
       "image": "https://via.placeholder.com/150",
-      "votes": 0
+      "votes": 1
     },
     {
       "id": "6",
