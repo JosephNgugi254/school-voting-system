@@ -8,13 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchCandidates() {
-    fetch('db.json')
+    fetch('http://localhost:3000/chairpersons')
         .then(response => response.json())
-        .then(data => {
-            displayCandidates(data.chairpersons, 'chairpersons');
-            displayCandidates(data.dhCaptains, 'DHcaptains');
+        .then(chairpersons => {
+            displayCandidates(chairpersons, 'chairpersons');
         })
-        .catch(error => console.error('Error fetching candidates:', error));
+        .catch(error => console.error('Error fetching chairpersons:', error));
+
+    fetch('http://localhost:3000/dhCaptains')
+        .then(response => response.json())
+        .then(dhCaptains => {
+            displayCandidates(dhCaptains, 'DHcaptains');
+        })
+        .catch(error => console.error('Error fetching dhCaptains:', error));
 }
 
 function displayCandidates(candidates, positionName) {
@@ -200,17 +206,18 @@ function initializeCharts() {
 
 async function updateCharts() {
     try {
-        const response = await fetch('db.json');
-        const data = await response.json();
+        const chairResponse = await fetch('http://localhost:3000/chairpersons');
+        const chairData = await chairResponse.json();
+
+        const dhResponse = await fetch('http://localhost:3000/dhCaptains');
+        const dhData = await dhResponse.json();
 
         // Update Chairperson results chart
-        const chairData = data.chairpersons;
         chairChart.data.labels = chairData.map(c => c.name);
         chairChart.data.datasets[0].data = chairData.map(c => c.votes);
         chairChart.update();
 
         // Update DH Captain results chart
-        const dhData = data.dhCaptains;
         dhChart.data.labels = dhData.map(c => c.name);
         dhChart.data.datasets[0].data = dhData.map(c => c.votes);
         dhChart.update();
@@ -218,9 +225,6 @@ async function updateCharts() {
         console.error('Error updating charts:', error);
     }
 }
-
-
-
 
 //chart.js external api initial javascript
 // const ctx = document.getElementById('myChart');
